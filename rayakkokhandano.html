@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/digital_palika.png" type="image/png" />
+  <title>डिजिटल पालिका</title>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css"
+  />
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css"
+  />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css"
+    integrity="sha512-dC0G5HMA6hLr/E1TM623RN6qK+sL8sz5vB+Uc68J7cBon68bMfKcvbkg6OqlfGHo1nMmcCxO5AinnRTDhWbWsA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="./css/dg_pis.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/gov_paper.css" />
+  <link rel="stylesheet" href="./css/gn_details.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link
+    href="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/css/nepali.datepicker.v3.7.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+  <!-- Nepali Datepicker -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="./css/nepali_date_picker.css"
+  />
+    <link rel="stylesheet" href="./css/dg_pis.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/gov_paper.css" />
+    <link rel="stylesheet" href="./css/gn_details.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  
+</head>
+ 
+
+<body class="">
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand">
+      <!-- demo -->
+      <div class="sidebar-btn">
+        <a
+          role="button"
+          id="btn_sidebar"
+          data-bs-toggle="collapse"
+          href=".collapse-Menu"
+          aria-expanded="false"
+          aria-controls="side-bar content-bar"
+        >
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+      <!-- demo  -->
+      <!-- toggle  -->
+      <!-- logo  -->
+      <div id="logo">
+        <a href="index.html" class="navbar-brand navbar-toggle">
+          <img
+            src="./images/digital_palika.png"
+            height="40px"
+            width="40px"
+            alt=""
+          />
+
+          <span class="heading"> डिजिटल पालिका</span>
+        </a>
+      </div>
+      <!-- logo  -->
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      
+      <div id="navbarCollapse" class="navbar-collapse">
+        <div class="navbar-collapse d-flex justify-content-end" id="navbarSupportedContent" >
+          
+          <div class="dropstart">
+            <i class="fa-solid las la-search pe-3 fa-lg navico" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu" style="width: 200pt; border: none;">
+              <div class="input-group search-box" bis_skin_checked="1">
+
+                <input type="text" id="search" class="form-control" placeholder="खोज्नुहोस्" autocomplete="off">
+
+                <span class="input-group-addon disabled"><i class="las la-search"></i></span>
+            </div>
+            </ul>
+          </div>
+
+          <div class="dropstart">
+            <div class="position-absolute" id="count" style="margin:-9px 20px;font-size:12px" bis_skin_checked="1">0</div>
+            <i class="fa-solid fa-bell  pe-3 fa-lg navico" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu mt-5">
+              <li><a class="dropdown-item text-success fw-bold fs-6" href="#">Notification</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                
+              </li>
+            </ul>
+          </div>
+          
+          <div class="dropstart">
+            <i class="fa-solid fa-user pe-3 fa-lg navico" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu mt-5">
+              <li><a class="dropdown-item text-success fw-bold fs-6" href="#">Super Admin</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="cssnav" href="#"><i
+                    class="fa-solid fa-user m-2"></i> Profile</a></li>
+              <li><a class="cssnav" href="#"><i
+                    class="fa-solid fa-gear m-2"></i> Settings</a></li>
+              <li><a class="cssnav" href="#"></i><i
+                    class="fa-solid fa-arrow-right-from-bracket m-2"></i> Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          
+    </nav>
+</div>
+  <div class="container-fluid content-body">
+    <div class="row">
+      <div class="container-fluid collapse show collapse-Menu collapse-horizontal"
+      id="side_bar">
+        <div class="main-menu" id="side-bar">
+        <ul class="main-menu-ul flex-wrap">
+          <a href="gaupalikanagarpalika.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/Nagarpalika.png"
+              alt=""
+            />
+            <p class="fs-6">गाउपालिका/नगरपालिका</p>
+          </li>
+          </a>
+        
+          <a href="sewa.html">
+            <li class="box">
+              <img
+              src="./icons/sewa_icon.png"
+              alt=""
+            />
+            <p class="fs-6">सेवा</p>
+          </li>
+          </a>
+        
+          <a href="sifarish.html">
+            <li class="box">
+              <img
+              src="./icons/sifaris_icon.png"
+              alt=""
+            />
+            <p class="fs-6">सिफारिस</p>
+            
+          </li>
+          </a>
+        
+          <a href="wardpatra.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/nagarik_badapatra.png"
+              alt=""
+            />
+              <p class="fs-6">वडापत्र</p>
+            </li>
+          </a>
+        
+          <a href="yojana.html">
+            <li class="box">
+              <img
+              src="./icons/yojana_icon.png"
+              alt=""
+            />
+              <p class="fs-6">योजना</p>
+           </li>
+          </a>
+        
+          <a href="setting.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/setting.png"
+              alt=""
+            />
+              <p class="fs-6">सेटिङ्ग</p>
+          </li>
+          </a>
+        
+          <a href="inventory.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/Inventory.png"
+              alt=""
+            />
+              <p class="fs-6">इन्भेन्ट्री</p>
+          </li>
+          </a>
+        
+          <a href="prayogkartabewastapan.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/user_icon.png"
+              alt=""
+            />
+              <p class="fs-6">प्रयोगकर्ता/ व्यावस्थापन</p>
+          </li>
+          </a>
+        
+          <a href="digitalprofile.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/digital_profile.png"
+              alt=""
+            />
+              <p class="fs-6">डिजिटल प्रोफाइल</p>
+          </li>
+          </a>
+        
+          <a href="sanchar.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/Communication.png"
+              alt=""
+            />
+              <p class="fs-6">संचार</p>
+          </li>
+          </a>
+        
+          <a href="manavsansaadhan.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/HR.png"
+              alt=""
+            />
+              <p class="fs-6">मानव संसाधान</p>
+          </li>
+          </a>
+        
+          <a href="byaktigatjaankaripranali.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/PIS.png"
+              alt=""
+            />
+              <p class="fs-6">व्यतिगत/ जानकारी/ प्रणाली</p>
+          </li>
+          </a>
+
+          <a href="budget.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/Budget.png"
+              alt=""
+            />
+              <p class="fs-6">बजेट</p>
+          </li>
+          </a>
+          <a href="lisense.html">
+            <li class="box">
+              <img
+              src="./icons/sidebar/setting.png"
+              alt=""
+            />
+              <p class="fs-6">लाइसेन्स</p>
+            
+          </li>
+          </a>
+       
+        </ul>
+        </div></div>
+    
+
+        <div class="container-fluid" id="content_bar">
+            <div class="container-fluid collapse show collapse-Menu display-view"  id="content-bar">
+                <div class="content-navbar">
+                  <div class="content-navbar-box d-flex">
+                    <a href="bibaran.html">
+                      <div>
+                        <img
+                        src="./icons/sidebar/Nagarpalika.png"
+                        alt=""
+                      />
+                        <span class="navbar-box-title">बिवरण</span>
+                      </div>
+                    </a>
+
+                    <a href="setting.html">
+                      <div>
+                        <img
+                        src="./icons/sidebar/setting.png"
+                        alt=""
+                      />
+                        <span class="navbar-box-title">सेटिङ</span>
+                      </div>
+                    </a>
+                     
+                    <a href="chalani.html">
+                      <div>
+                        <img
+              src="./icons/sifaris_icon.png"
+              alt=""
+            />
+                        <span class="navbar-box-title">चलानी</span>
+                      </div>
+                    </a>
+            
+              <a href="rolemanager.html">
+                <div>
+                  <img
+                  src="./icons/buttom_navbar/Jana.png"
+                  alt=""
+                />
+                  <span class="navbar-box-title">रोल म्यानेज</span>
+                </div>
+              </a>
+              <a href="usermanager.html">
+                <div>
+                  <img
+                  src="./icons/buttom_navbar/user.png"
+                  alt=""
+                />
+                  <span class="navbar-box-title">युजर म्यानेज</span>
+                </div>
+              </a>
+              <a href="prayogkartabewastapan.html">
+                <div>
+                  <img
+                  src="./icons/buttom_navbar/Jana.png"
+                  alt=""
+                />
+                  <span class="navbar-box-title">प्रयोगकर्ता समूहीकरण</span>
+                </div>
+              </a>
+              <a href="namastemayor.html">
+                <div>
+                  <img
+                  src="./icons/buttom_navbar/namaste_icon.png"
+                  alt=""
+                />
+                  <span class="navbar-box-title">नमस्ते मेयर</span>
+                </div>
+              </a>
+
+              <a href="prakashan.html">
+                <div>
+                  <img
+                  src="./icons/buttom_navbar/publication.png"
+                  alt=""
+                />
+                  <span class="navbar-box-title">प्रकाशन</span>
+                </div>
+              </a>
+
+              <a href="budget.html">
+                <div>
+                  <img
+                  src="./icons/buttom_navbar/Budget.png"
+                  alt=""
+                />
+                  <span class="navbar-box-title">बजेट</span>
+                </div>
+              </a>
+             
+              <a href="sujabsalla.html">
+                <div>
+                  <img
+                  src="./icons/buttom_navbar/Salla.png"
+                  alt=""
+                />
+                  <span class="navbar-box-title">सुझाब सल्ला</span>
+                </div>
+              </a>
+            </div>
+          </div>
+            </div>
+            <br>
+            <div class="container-fluid main-content-view">
+              <h3>रायको खण्ड न्ं </h3><hr>
+              <h4>रायको खण्ड न्ं थप्नुहोस</h4>
+              <div class="row ">
+                <div class="col-md-10">
+                  <div class="input-group search-box" bis_skin_checked="1">
+                    <input type="text" id="search" class="form-control" placeholder="लेख्नुहोस" autocomplete="off"> 
+                </div>
+                </div>
+                <div class="col-md-2 pt-2">
+                 
+                    <span class="input-group-addon disabled"><button type="button" class="btn btn-success">थप्नुहोस </button></span> 
+                
+                </div>
+               </div><hr>
+               <h4>रायको खण्ड न्ं हेर्नुहोस </h4>
+               <table class="table table-striped">
+                 <thead>
+                   <tr>
+                     <th scope="col">क्र.स</th>
+                     
+                     <th scope="col">रायको खण्ड न्ं </th>
+                     
+                     <th scope="col"></th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <td>१ </td>
+                     <td>फाएल </td>
+                     <td> <button type="button" class="btn btn-outline-info  col-md-3 ">सच्याउनुहोस</button>
+                       <button type="button" class="btn btn-outline-danger  col-md-3 ">हटाउनुहोस</button></td>
+         
+                   </tr>
+               
+                 </tbody>
+               </table>
+           
+                 
+               </div>
+
+
+
+
+      </div>
+    </div>
+    
+  </div>
+  
+</body>
+
+</html>
